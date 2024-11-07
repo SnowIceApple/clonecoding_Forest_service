@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, minimal-ui">
+    <title>산림청 클론코딩</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="tab_to_move">
+            <a href="#main">
+                클릭 시 본문으로 이동합니다
+            </a>
+        </div>
+         <header id="header">
+            <div class="header">
+                <div class="header_top">
+                    <div class="container">
+                        <div class="ht_inner">
+                            <div class="ht_left">
+                                <div class="certi_tit">
+                                    <span class="certi">이 누리집은 대한민국 공식 전자정부 누리집입니다.</span>
+                                </div>
+                            </div>
+                            <div class="ht_right">
+                                <div class="ht_util">
+                                    <ul>
+                                        <li><a href="#" target="_blank">접속하기</a></li>
+                                        <li><a href="#" target="_blank">회원가입</a></li>
+                                        <li><a href="#" target="_blank">English</a></li>
+                                        <li><a href="#" target="_blank">글자크기 조정안내</a></li>
+                                    </ul>
+                                </div>
+                                <div class="ht_sns">
+                                    <ul>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="./img/img_header_sns01.png" alt="산림청 트위터 페이지 새창열기">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="./img/img_header_sns02.png" alt="산림청 페이스북 페이지 새창열기">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="./img/img_header_sns03.png" alt="산림청 블로그 페이지 새창열기">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="./img/img_header_sns04.png" alt="산림청 인스타그램 페이지 새창열기">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">
+                                                <img src="./img/img_header_sns05.png" alt="산림청 유튜브 페이지 새창열기">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //header_top -->
+                <div class="header_bot">
+                    <div class="container">
+                        <div class="hb_inner">
+                            <div class="hb_left">
+                                <h1 class="logo">
+                                    <a href="#">
+                                        <img src="./img/logo.png" alt="산림청 로고">
+                                    </a>
+                                </h1>
+                                <div class="new_kr">
+                                    <a href="#" target="_blank">
+                                        <img src="./img/gov_bi.png" alt="다시 대한민국 새로운 국민의 나라 페이지 새창열기">
+                                    </a>
+                                </div>
+                            </div>
+                            <nav id="main_nav">
+                                <ul class="mn_floor1">
+                                    <li>
+                                        <a href="#" target="_blank">산림정책</a>
+                                        <div class="mega_menu">
+                                            <div class="container">
+                                                <div class="mega_menu_inner">
+                                                    <div class="mega_menu_tit">
+                                                        <strong>산림정책</strong>
+                                                        <p>
+                                                            사람이 중심이 되는 따뜻하고
+                                                            <br>
+                                                            행복한 세상을 만드는데
+                                                            <br>
+                                                            산림청이 앞장서겠습니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mega_menu_list">
+                                                        <ul class="mn_floor2">
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">중장기계획</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li><a href="#" target="_blank">제6차 산림기본계획('18~'37)</a></li>
+                                                                    <li><a href="#" target="_blank">산림르네상스 추진 전략('22~'27)</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">업무계획</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li><a href="#" target="_blank">주요업무계획</a></li>
+                                                                    <li><a href="#" target="_blank">주요세부추진계획</a></li>
+                                                                    <li><a href="#" target="_blank">달라지는 주요산림정책</a></li>
+                                                                    <li><a href="#" target="_blank">산림사업 안내서</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">e-산림정책도서관</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li><a href="#" target="_blank">전자책</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림과학 전자도서관</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림연구과제 및 성과</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">국립수목원 연구간행물</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">정책연구보고서</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">분야별산림정보</a>
+                                        <div class="mega_menu">
+                                            <div class="container">
+                                                <div class="mega_menu_inner">
+                                                    <div class="mega_menu_tit">
+                                                        <strong>분야별산림정보</strong>
+                                                        <p>
+                                                            사람이 중심이 되는 따뜻하고
+                                                            <br>
+                                                            행복한 세상을 만드는데
+                                                            <br>
+                                                            산림청이 앞장서겠습니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mega_menu_list">
+                                                        <ul class="mn_floor2">
+                                                            <li>
+                                                                <div class="mnf2_tit outer_link">
+                                                                    <a href="#" target="_blank">국제산림정보</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">국제협력</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">해외자원</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">임업수출교역</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit outer_link">
+                                                                    <a href="#" target="_blank">산림산업</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">종묘</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">조림</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">숲가꾸기</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">목재</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">임업인/임산물</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">임도</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림일자리</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">산림복지</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림휴양/치유</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">숲길/등산</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림문화</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림교육</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산촌/귀산촌</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">수목장림</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">산림보호</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">숲사랑</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림환경보호</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">백두대간</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">도시숲/무궁화</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">수목원/정원</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">산림재난</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">산불</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산사태</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림병해충</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="active">
+                                        <a href="#" target="_blank">행정정보</a>
+                                        <div class="mega_menu">
+                                            <div class="container">
+                                                <div class="mega_menu_inner">
+                                                    <div class="mega_menu_tit">
+                                                        <strong>행정정보</strong>
+                                                        <p>
+                                                            사람이 중심이 되는 따뜻하고
+                                                            <br>
+                                                            행복한 세상을 만드는데
+                                                            <br>
+                                                            산림청이 앞장서겠습니다.
+                                                        </p>
+                                                    </div>
+                                                    <div class="mega_menu_list">
+                                                        <ul class="mn_floor2">
+                                                            <li>
+                                                                <div class="mnf2_tit outer_link">
+                                                                    <a href="#" target="_blank">알림정보</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li><a href="#" target="_blank">알립니다</a></li>
+                                                                    <li><a href="#" target="_blank">공고</a></li>
+                                                                    <li><a href="#" target="_blank">채용정보</a></li>
+                                                                    <li><a href="#" target="_blank">입찰정보</a></li>
+                                                                    <li><a href="#" target="_blank">전자공시 송달</a></li>
+                                                                    <li><a href="#" target="_blank">인사정보</a></li>
+                                                                    <li><a href="#" target="_blank">사유림을 삽니다</a></li>
+                                                                    <li><a href="#" target="_blank">산림공무원이 되는 길</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit outer_link">
+                                                                    <a href="#" target="_blank">산림행정미디어센터</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li><a href="#" target="_blank">보도자료</a></li>
+                                                                    <li><a href="#" target="_blank">보도설명·정정자료</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">기고/컬럼</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">기자브리핑</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">월별주요소식</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">사진</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">동영상</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림청 누리소통망</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">법령정보</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li><a href="#" target="_blank">소관법령</a></li>
+                                                                    <li><a href="#" target="_blank">훈령/예규/고시</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">입법예고</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">행정예고</a></li>
+                                                                    <li><a href="#" target="_blank">최근 재개정법령</a></li>
+                                
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">산림보호</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">숲사랑</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림환경보호</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">백두대간</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">도시숲/무궁화</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">수목원/정원</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <div class="mnf2_tit">
+                                                                    <a href="#" target="_blank">산림재난</a>
+                                                                </div>
+                                                                <ul class="mn_floor3">
+                                                                    <li class="outer_link"><a href="#" target="_blank">산불</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산사태</a></li>
+                                                                    <li class="outer_link"><a href="#" target="_blank">산림병해충</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">국민소통</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">정보공개</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">산림청소개</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+</html>

@@ -1,0 +1,372 @@
+body{
+    font-family: "Noto Sans KR", serif;
+    overflow-x: hidden;
+}
+
+#wrap{
+    width: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+:root{
+    --color1-: #008385;
+    --color2-: #03a2a4;
+}
+
+
+/* tab_to_move */
+
+.tab_to_move a{
+    position: absolute;
+    left: 0;
+    top: -200px;
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 9999;
+}
+
+.tab_to_move a:active,
+.tab_to_move a:focus{
+    top: 0px;
+    outline: 1px solid #000;
+    border: 1px solid #fff;
+}
+
+/* header */
+
+#header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: 3px solid var(--color1-);
+}
+
+.header{
+    width: 100%;
+}
+
+.header_top{
+    width: 100%;
+    background: #56575f;
+}
+
+.ht_inner{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certi_tit span{
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+    padding-left: 54px;
+    line-height: 25px;
+    background: url('../img/eg_ico.png') left center no-repeat;
+    background-size: 50px auto;
+    letter-spacing: -0.5px;
+}
+
+.ht_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ht_util{
+    margin-right: 30px;
+}
+
+.ht_util ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 25px;
+}
+
+.ht_util ul li a{
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 20px;
+    background-repeat: no-repeat !important;
+    letter-spacing: -0.5px;
+}
+
+.ht_util ul li:nth-child(1) a{
+    background: url('../img/h_rbtn_icon_1.png');
+    background-size: 12px auto;
+    background-position: left bottom 3px;
+}
+
+.ht_util ul li:nth-child(2) a{
+    background: url('../img/h_rbtn_icon_2.png');
+    background-size: 14px auto;
+    background-position: left bottom 1px;
+}
+
+.ht_util ul li:nth-child(3) a{
+    background: url('../img/h_rbtn_icon_3.png');
+    background-size: 15px auto;
+    background-position: left bottom 1px;
+}
+
+.ht_util ul li:nth-child(4) a{
+    background: url('../img/h_rbtn_icon_4.jpg');
+    background-size: 17px auto;
+    background-position: left bottom 1px;
+}
+
+.ht_sns ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 5px;
+}
+
+.ht_sns ul li a{
+    display: block;
+}
+
+.ht_sns ul li a img{
+    width: 32px;
+}
+
+.header_bot{
+    width: 100%;
+}
+
+.hb_inner{
+    width: 100%;
+    height: 87px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hb_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    margin-right: 20px;
+}
+
+.logo a{
+    display: inline-block;
+}
+
+.logo a img{
+    width: auto;;
+    height: 45px;
+}
+
+.new_kr a{
+    display: inline-block;
+}
+
+.new_kr a img{
+    width: auto;
+    height: 45px;
+}
+
+#main_nav{
+    height: 100%;
+}
+
+#main_nav .mn_floor1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#main_nav .mn_floor1 > li{
+    height: 100%;
+}
+
+#main_nav .mn_floor1 > li > a{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    padding: 0 18px;
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: -1.3px;
+    overflow: hidden;
+    color: #000;
+}
+
+#main_nav .mn_floor1 > li:hover > a{
+    color: #22389a;
+}
+
+#main_nav .mn_floor1 > li:hover > a::after{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 8.5px 14.722px 8.5px;
+    border-color: transparent transparent var(--color1-) transparent;
+}
+
+.mega_menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    background: #fff;
+    width: 100%;
+    border-bottom: 2px solid var(--color2-);
+    box-sizing: border-box;
+}
+
+#main_nav .mn_floor1 > li.active .mega_menu{
+    display: block;
+}
+
+.mega_menu_inner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mega_menu_tit{
+    width: 270px;
+    background: #f3f3f3;
+    box-sizing: border-box;
+    padding: 35px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px 0;
+}
+
+.mega_menu_tit strong,
+.mega_menu_tit p{
+    display: block;
+    text-align: center;
+}
+
+.mega_menu_tit strong{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+}
+
+.mega_menu_tit p{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+}
+
+.mega_menu_list{
+    width: calc(100% - 270px);
+    box-sizing: border-box;
+    padding: 15px 0 40px 0;
+}
+
+.mn_floor2{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mn_floor2 > li{
+    width: 230px;
+    margin-left: 50px;
+    height: max-content;
+}
+
+.mn_floor1 > li:nth-child(2) .mn_floor2 > li:nth-child(5){
+    margin-top: -120px;
+}
+
+.mnf2_tit{
+    width: 100%;
+}
+
+.mnf2_tit a{
+    display: block;
+    padding: 6px 0 11px 0;
+    border-bottom: 2px solid #000;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    min-height: 43px;
+    box-sizing: border-box;
+}
+
+.mn_floor3{
+    width: 100%;
+}
+
+.mn_floor3 li{
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.mn_floor3 li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 11px 13px 12px 13px;
+    font-size: 16px;
+    color: #60606f;
+    font-weight: 500;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    transition: all .1s ease;
+}
+
+.mn_floor3 li a:hover{
+    color: #fff;
+    background: var(--color2-);
+}
+
+.outer_link > a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.outer_link > a::after{
+    display: block;
+    content: url('../img/bul_blank.png');
+    position: static;
+    margin-left: 7px;
+    margin-top: 2px;
+}
+
+.outer_link:not(.mnf2_tit) > a:hover::after{
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
