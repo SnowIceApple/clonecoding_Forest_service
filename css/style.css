@@ -59,11 +59,12 @@ body{
     height: 100%;
     z-index: 10;
     overflow: hidden !important;
-    transition: padding-bottom 0.4s ease;
+    transition: padding-bottom 0s 0.4s ease;
 }
 
 .nav_active .header{
     padding-bottom: 25px;
+    transition: padding-bottom 0.4s ease;
 }
 
 .mega_menu_deco{
