@@ -101,6 +101,7 @@ input::-webkit-search-results-decoration{
     display:none;
 }
 
+legend,
 .hidden_text{
 	position: absolute;
 	font-size: 1px;
