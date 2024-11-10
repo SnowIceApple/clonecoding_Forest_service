@@ -225,6 +225,17 @@ $(document).ready(function(){
       }
     });
 
+    $('.fvsv_slide').slick({
+      infinite : true,
+      autoplay : false,
+      draggable : false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: $('.fvsv_prev'),
+      nextArrow: $('.fvsv_next'),
+    });
+
     $('.mt_btn').each(function(){
       $(this).on('click', function(){
         $(this).closest('li').addClass('active').siblings().removeClass('active');
