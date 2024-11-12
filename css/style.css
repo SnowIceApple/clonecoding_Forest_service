@@ -2195,6 +2195,7 @@ section{
 .fb_mega_container{
     position: relative;
     width: 100%;
+    height: 100%;
     border-top: 3px solid #637be3;
     padding: 45px 0;
     background: rgba(225, 225, 240, 0.97);
