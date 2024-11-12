@@ -641,7 +641,7 @@ section{
 
 /* content start */
 
-.content_box{
+#content_box{
     width: 100%;
     padding-top: 180px;
 }
