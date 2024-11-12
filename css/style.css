@@ -1286,6 +1286,12 @@ section{
     background: #fff;
     margin: 0 auto;
     border-radius: 50%;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+    transition: all .2s ease;
+}
+
+.fvsv_slide .slick-slide a:hover .fvsv_img{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
 }
 
 .fvsv_txt{
