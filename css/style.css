@@ -2154,7 +2154,6 @@ section{
 }
 
 .fb_link_list > ul > li{
-    pointer-events: none;
 }
 
 .fb_link_list > ul > li > a{
@@ -2168,7 +2167,6 @@ section{
     font-weight: 700;
     letter-spacing: -1px;
     color: #fff;
-    pointer-events: all;
 }
 
 .fb_link_list > ul > li:nth-child(2){
@@ -2288,10 +2286,12 @@ section{
     width: 1400px;
     box-sizing: border-box;
     padding-left: 430px;
+    pointer-events: none;
 }
 
 .copyright span{
     font-size: 13px;
     color: #bdbdbd;
     letter-spacing: -1px;
+    pointer-events: all;
 }
