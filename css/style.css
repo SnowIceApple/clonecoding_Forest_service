@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    max-width: 1400px;
+    width: 1400px;
     margin: 0 auto;
     height: 100%;
 }
@@ -1944,4 +1944,354 @@ section{
 .wfli_link li a:hover{
     color: #000;
     text-decoration: underline;
+}
+
+/* main_bot_ad */
+
+#main_bot_ad{
+    padding: 20px 0;
+    background: #f8f8f9;
+}
+
+.national_symbol{
+    width: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main_bot_slide_box{
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.main_bot_slide{
+    width: 1160px;
+    overflow: hidden;
+}
+
+.main_bot_slide .slick-list{
+    margin: 0 -20px;
+}
+
+.main_bot_slide .slick-slide{
+    margin: 0 20px;
+}
+
+.main_bot_slide .slick-slide a{
+    display: block;
+    overflow: hidden;
+    height: 37px;
+}
+
+.main_bot_slide .slick-slide a img{
+    width: 100%;
+    height: 100%;
+}
+
+.mbs_control{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mbs_control button{
+    pointer-events: all;
+}
+
+.mbs_link{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.mbs_link a{
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 25px;
+    overflow: hidden;
+}
+
+.mbs_link a img{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    max-width: 9999px;
+    height: 22px;
+}
+
+/* footer */
+
+#footer{
+    width: 100%;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer_top{
+    padding: 35px 0;
+    background: #fff;
+}
+
+.ft_inner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ft_list{
+    margin-bottom: 25px;
+}
+
+.ft_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ft_list ul li{
+    position: relative;
+    padding: 0 15px;
+}
+
+.ft_list ul li::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 14px;
+    background: #9e9ea1;
+}
+
+.ft_list ul li:last-child::after{
+    display: none;
+}
+
+.ft_list ul li:first-child{
+    padding-left: 0px;
+}
+
+.ft_list ul li a{
+    font-size: 16px;
+    color: #555555;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.ft_list ul li a:hover{
+    color: #000;
+}
+
+.ft_list ul li.bold a{
+    font-size: 18px;
+    color: #000099;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.ft_list ul li.bold a:hover{
+    color: #000099;
+}
+
+.ft_address ul{
+    width: 100%;
+}
+
+.ft_address ul li{
+    width: 100%;
+}
+
+.ft_address ul li address{
+    line-height: 1.4;
+    font-size: 15px;
+    letter-spacing: -1px;
+    color: #555;
+    font-weight: 500;
+}
+
+.ft_address ul li address span{
+    color: #000099;
+}
+
+.footer_bot{
+    position: relative;
+    width: 100%;
+    padding: 17px 0;
+    background: #3e3f4c;
+    z-index: 10;
+}
+
+.fb_link_list{
+    width: 100%;
+}
+
+.fb_link_list > ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 13px;
+}
+
+.fb_link_list > ul > li{
+    pointer-events: none;
+}
+
+.fb_link_list > ul > li > a{
+    display: flex;
+    padding: 13px 20px 13px 45px;
+    width: max-content;
+    border-radius: 999px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #fff;
+    pointer-events: all;
+}
+
+.fb_link_list > ul > li:nth-child(2){
+    flex: 1;
+}
+
+.fb_link_list > ul > li:nth-child(2) > a{
+    background: url('../img/f_utill_icon_2.png') left 20px center no-repeat;
+}
+
+.fb_link_list > ul > li:not(:nth-child(2)) > a{
+    background: url('../img/f_utill_icon_1.png') left 20px center no-repeat;
+}
+
+.fb_megamenu{
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    width: 100%;
+    padding-top: 30px;
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.fb_mega_container{
+    position: relative;
+    width: 100%;
+    border-top: 3px solid #637be3;
+    padding: 45px 0;
+    background: rgba(225, 225, 240, 0.97);
+}
+
+.fb_mega_box{
+    width: 100%;
+}
+
+.fb_mega_box h2{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: -1px;
+    color: #2d1eba;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #afafb6;
+}
+
+.fb_mega_box h2 span{
+    color: #000;
+}
+
+.fb_mega_list{
+    width: 100%;
+}
+
+.fb_mega_list ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fb_mega_list ul li{
+    width: 16%;
+    margin: 0px 2% 7px 2%;
+}
+
+.fb_mega_list ul li a{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 13px 20px;
+    background: #fff;
+    width: 100%;
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    border: 1px solid #cfcdcd;
+    transition: all .1s ease;
+}
+
+.fb_mega_list ul li a:hover{
+    color: #fff;
+    background: #4C51BB;
+}
+
+.fbm_close{
+    position: absolute;
+    left: 50%;
+    top: -27.5px;
+    transform: translateX(-50%);
+}
+
+.fbm_close button{
+    height: 55px;
+    border-radius: 999px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 30px 0 45px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    border: 3px solid #637be3;
+    background: #fff url('../img/util_item_target_close.png') left 25px center no-repeat;
+}
+
+.copyright{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1400px;
+    box-sizing: border-box;
+    padding-left: 430px;
+}
+
+.copyright span{
+    font-size: 13px;
+    color: #bdbdbd;
+    letter-spacing: -1px;
 }
