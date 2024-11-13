@@ -1,6 +1,10 @@
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     font-family: "Noto Sans KR", serif;
-    overflow-x: hidden;
     background: #ecebf0;
 }
 
@@ -626,7 +630,38 @@ section{
 /* all_menu */
 
 .all_menu{
-    display: none;
+    position: relative;
+    visibility: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1000;
+}
+
+.all_menu_container{
+    width: 100%;
+    height: 100%;
+}
+
+.all_menu_top{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.am_logo a{
+    display: inline-block;
+}
+
+.am_logo a img{
+    width: 95px;
 }
 
 /* content start */

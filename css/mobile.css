@@ -247,8 +247,8 @@
         left: 0;
         bottom: 0;
         width: calc(43% - 25px);
-        z-index: -1;
         height: 210px;
+        z-index: 2;
         align-items: center;
     }
 
@@ -269,10 +269,16 @@
 }
 
 @media screen and (max-width: 1180px){
+
+    .main_bot_slide .slick-list{
+        width: 1160px;
+        height: 37px;
+    }
+
     .fb_mega_list{
         padding: 0;
     }
-    
+
     .fb_mega_list ul li a{
         font-size: 14px;
         padding: 12px 10px;
@@ -313,7 +319,11 @@
         width: calc(100% - 210px);
     }
 
-    .all_menu{
-        display: block;
-    }
+    /* .all_menu{
+        visibility: visible;
+    } */
+}
+
+@media screen and (max-width: 1000px){
+
 }

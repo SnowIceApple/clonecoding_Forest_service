@@ -270,11 +270,12 @@ $(document).ready(function(){
         $('.fb_mega_btn').each(function(e){
           $(this).on('click', function(e){
           var height = $(this).siblings('.fb_megamenu').children('.fb_mega_container').outerHeight() + 25;
-
             e.preventDefault();
             $(this).parent('li').toggleClass('active').siblings('li').removeClass('active');
+            $(this).parent('li').siblings('li').children('.fb_mega_btn').attr('aria-expanded', 'false');
             console.log(height);
             if($(this).parent('li').hasClass('active')){
+              $(this).attr('aria-expanded', 'true');
               $(this).siblings('.fb_megamenu').css('visibility', 'visible');
               $(this).siblings('.fb_megamenu').css('height', '0');
               $(this).siblings('.fb_megamenu').animate({
@@ -285,6 +286,7 @@ $(document).ready(function(){
             }
             $('.fb_link_list > ul > li').each(function(){
               if($(this).hasClass('active') == false){
+                $(this).children('.fb_mega_btn').attr('aria-expanded', 'false');
                 $(this).children('.fb_megamenu').animate({
                   height: 0,
                   opacity: 0,
@@ -318,6 +320,7 @@ $(document).ready(function(){
 
         $('.fbm_close').on('click', function(){
           $('.fb_link_list > ul > li').removeClass('active');
+          $('.fb_mega_btn').attr('aria-expanded', 'false');
           $('.fb_megamenu').animate({
             height: 0,
             opacity: 0,
