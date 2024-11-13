@@ -2232,11 +2232,13 @@ section{
 .fb_mega_container{
     position: relative;
     width: 100%;
+    height: auto;
     border-top: 3px solid #637be3;
     padding: 45px 0;
     background: rgba(225, 225, 240, 0.97);
     box-sizing: border-box;
     margin-top: 25px;
+    transition: all .2s ease;
 }
 
 .active .fb_mega_container{
