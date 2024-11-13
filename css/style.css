@@ -1343,6 +1343,7 @@ section{
     box-sizing: border-box;
     padding: 20px 25px;
     background: url('../img/open_bg.png') center no-repeat;
+    background-size: cover;
 }
 
 .minister h2{
@@ -2352,8 +2353,8 @@ section{
     transform: translate(-50%, -50%);
     width: 1400px;
     box-sizing: border-box;
-    padding-left: 430px;
     pointer-events: none;
+    text-align: center;
 }
 
 .copyright span{
@@ -2361,4 +2362,9 @@ section{
     color: #bdbdbd;
     letter-spacing: -1px;
     pointer-events: all;
+    margin-left: -10%;
+}
+
+.wildfire_alert{
+    width: 100%;
 }

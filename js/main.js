@@ -240,6 +240,10 @@ $(document).ready(function(){
           settings: {
             slidesToShow: 3
           },
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2
+          },
         }
       ]
     });

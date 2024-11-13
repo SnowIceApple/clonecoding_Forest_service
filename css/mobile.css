@@ -108,3 +108,149 @@
         padding: 0 10px;
     }
 }
+
+@media screen and (max-width: 1280px){
+
+    /* main_notice */
+
+    .main_notice{
+        flex-direction: row;
+        height: auto;
+    }
+
+    .main_notice .main_grid_left{
+        width: 100%;
+        height: 580px;
+    }
+
+    .main_notice .main_grid_right{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 20px;
+    }
+
+    .main_notice_box{
+        height: 280px;
+    }
+
+    .main_notice .main_grid_right .main_notice_box{
+        width: calc(50% - 10px);
+        height: auto;
+    }
+
+    .main_notice_side_slide{
+        padding-bottom: 20px;
+    }
+
+    .mnss_img{
+        height: 300px;
+    }
+
+    .mnss_img.type2{
+        height: 270px;
+    }
+
+    .main_notice_box.type1{
+        width: calc(70% - 10px);
+    }
+
+    .main_box.min1{
+        width: calc(30% - 10px);
+        height: 280px;
+    }
+
+    .fvsv_tit{
+        width: 250px;
+    }
+
+    .fvsv_slide_box{
+        width: calc(100% - 250px);
+    }
+
+    .middle_area .main_grid_left{
+        width: calc(66% - 10px);
+    }
+
+    .middle_area .main_grid_right.type1{
+        width: calc(34% - 10px);
+    }
+
+    .main_information .main_grid_left.type2{
+        width: 100%;
+    }
+
+    .main_information .main_grid_right.type1{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .main_box.type_mi_wide{
+        width: calc(70% - 10px);
+    }
+
+    .main_box.type_mi_min{
+        width: calc(25% - 15px);
+    }
+
+    .type_mi_min:has(.petition){
+        width: calc(30% - 10px);
+    }
+
+    .main_information .main_grid_right.type1{
+        margin-top: 20px;
+    }
+
+    .main_information .main_grid_right.type1 .main_box.type_right1{
+        width: calc(50% - 10px);
+        height: 190px;
+    }
+
+    .main_information .main_box.type_right1 .main_info_box{
+        padding: 15px;
+    }
+
+    .bugs_alert_list{
+        gap: 8px 0;
+    }
+
+    .bugs_alert_list li{
+        width: calc(50% - 10px);
+    }
+
+    .main_wildfire_info{
+        position: relative;
+    }
+
+    .main_wildfire_info .main_grid_left{
+        width: 100%;
+    }
+
+    .wildfire_info{
+        width: 100%;
+    }
+
+    .wildfire_visual{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: calc(43% - 25px);
+        z-index: -1;
+        height: 210px;
+        align-items: center;
+    }
+
+    .wildfire_visual img{
+        width: 280px;
+    }
+
+    .main_wildfire_info .main_grid_right.type1{
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .wildfire_liveInfo{
+        width: 57%;
+    }
+}
