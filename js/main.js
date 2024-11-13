@@ -18,13 +18,12 @@ $(document).ready(function(){
     });
 
 
-    var basicHeight = 0;
-    if($(window).outerWidth() <= 737){
-      basicHeight = 100;
-    }
-    else{
-      basicHeight = 90;
-    }
+    var basicHeight = 90;
+    // if($(window).outerWidth() <= 737){
+    //   basicHeight = 100;
+    // }
+    // else{
+    // }
 
     var marginHeight = 25;
 
@@ -110,9 +109,7 @@ $(document).ready(function(){
     $('.main_nav_close_btn').on('click', function(){
       $('.mn_floor1 li').removeClass('active');
       header.removeClass('nav_active');
-      if($(window).outerWidth() <= 737){
         basicHeight = 100;
-      }
 
         var tg = $(this);
         headerBot.stop().animate({
@@ -137,9 +134,6 @@ $(document).ready(function(){
 
 
     $('.hb_left, .hb_right').on('focusin', function(){
-      if($(window).outerWidth() <= 737){
-        basicHeight = 100;
-      }
         headerBot.stop().animate({
             height: basicHeight,
         }, 400); 
@@ -152,13 +146,21 @@ $(document).ready(function(){
 
     $(window).on('resize', function(){
       if($(window).outerWidth() <= 737){
-        basicHeight = 100;
         headerBot.css('height', basicHeight + 'px');
       }
       else{
-        basicHeight = 90;
         headerBot.css('height', basicHeight + 'px');
       }
+    });
+
+    $('.all_menu_open').each(function(){
+      $(this).on('click', function(){
+        if($(window).width() <= 1100){
+          $(this).addClass('active');
+          $('.all_menu').addClass('active');
+          $('.all_menu').focus();
+        }
+      });
     });
 
     $('.main_notice_slide').slick({
@@ -264,19 +266,21 @@ $(document).ready(function(){
           nextArrow: $('.mbs_next'),
         });
 
+
         $('.fb_mega_btn').each(function(e){
-          var height = $(this).siblings('.fb_megamenu').height();
           $(this).on('click', function(e){
+          var height = $(this).siblings('.fb_megamenu').children('.fb_mega_container').outerHeight() + 25;
+
             e.preventDefault();
             $(this).parent('li').toggleClass('active').siblings('li').removeClass('active');
             console.log(height);
             if($(this).parent('li').hasClass('active')){
-              $(this).siblings('.fb_megamenu').css('display', 'block');
+              $(this).siblings('.fb_megamenu').css('visibility', 'visible');
               $(this).siblings('.fb_megamenu').css('height', '0');
               $(this).siblings('.fb_megamenu').animate({
                 height: height,
                 opacity: 1,
-                display: 'block'
+                visibility: 'visible'
               }, 200);
             }
             $('.fb_link_list > ul > li').each(function(){
@@ -286,7 +290,7 @@ $(document).ready(function(){
                   opacity: 0,
                   display: 'none',
                 }, 200, function(){
-                  $(this).css('display', 'none');
+                  $(this).css('visibility', 'hidden');
                 });
               }
             });
@@ -296,14 +300,30 @@ $(document).ready(function(){
           });
         });
 
+        
+        $(window).on('resize', function(){
+          var rzheight = $('.has_mega.active').children().find('.fb_mega_container').outerHeight();
+          console.log(rzheight);
+
+          // $('.fb_mega_btn').each(function(){
+          //   console.log(rzheight);
+          //   if($(this).parent('.has_mega').hasClass('active')){
+          //     $(this).siblings('.fb_megamenu').css('height', rzheight + 'px');
+          //   }
+          //   if($('.has_mega').hasClass('active') == false){
+          //     $('.fb_megamenu').css('height', 0);
+          //   }
+          // });
+        });
+
         $('.fbm_close').on('click', function(){
           $('.fb_link_list > ul > li').removeClass('active');
           $('.fb_megamenu').animate({
             height: 0,
             opacity: 0,
-            display: 'none',
+            visibility: 'hidden',
           }, 200, function(){
-            $(this).css('display', 'none');
+            $(this).css('visibility', 'hidden');
           });
         });
 

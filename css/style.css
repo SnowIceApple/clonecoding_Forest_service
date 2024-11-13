@@ -12,7 +12,6 @@ body{
 .container{
     max-width: 1400px;
     margin: 0 auto;
-    height: 100%;
 }
 
 :root{
@@ -92,9 +91,6 @@ section{
     background: var(--color2-);
 }
 
-.nav_active .header{
-}
-
 .mega_menu_deco{
     position: absolute;
     left: 0;
@@ -139,9 +135,6 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.mega_menu_tit_deco ul li img{
 }
 
 .header_top{
@@ -277,9 +270,6 @@ section{
     z-index: 2;
 }
 
-.nav_active .header_bot_box{
-}
-
 .hb_inner{
     width: 100%;
     height: 90px;
@@ -386,12 +376,6 @@ section{
     flex-wrap: wrap;
     box-sizing: border-box;
     padding-bottom: 35px;
-}
-
-.nav_active .mega_menu_inner{
-}
-
-#main_nav .mn_floor1 > li.active .mega_menu_inner{
 }
 
 .mega_menu_tit{
@@ -639,6 +623,12 @@ section{
     background: url('../img/util_sitemap_button.png') center center no-repeat;
 }
 
+/* all_menu */
+
+.all_menu{
+    display: none;
+}
+
 /* content start */
 
 #content_box{
@@ -708,10 +698,6 @@ section{
 .main_box > div{
     height: 100%;
 }
-
-.main_box.border{
-}
-
 
 .main_notice_box{
     height: 275px;
@@ -976,10 +962,6 @@ section{
 .main_box.min1{
     width: 270px;
     height: 275px;
-}
-
-.main_notice_box.type2{
-
 }
 
 .main_notice_tab.type2{
@@ -1870,10 +1852,6 @@ section{
     border-top: 2px solid #00c386;
 }
 
-.wfi_table table thead{
-    
-}
-
 .wfi_table table th,
 .wfi_table table td{
     box-sizing: border-box;
@@ -2132,7 +2110,7 @@ section{
 
 .ft_list ul li{
     position: relative;
-    padding: 0 15px;
+    padding: 0 11px;
 }
 
 .ft_list ul li::after{
@@ -2216,9 +2194,6 @@ section{
     gap: 0 13px;
 }
 
-.fb_link_list > ul > li{
-}
-
 .fb_link_list > ul > li > a{
     display: flex;
     padding: 13px 20px 13px 45px;
@@ -2249,19 +2224,23 @@ section{
     left: 0;
     bottom: 100%;
     width: 100%;
-    padding-top: 30px;
     overflow: hidden;
-    display: none;
+    visibility: hidden;
     opacity: 0;
 }
 
 .fb_mega_container{
     position: relative;
     width: 100%;
-    height: 100%;
     border-top: 3px solid #637be3;
     padding: 45px 0;
     background: rgba(225, 225, 240, 0.97);
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+.active .fb_mega_container{
+    height: 100%;
 }
 
 .fb_mega_box{

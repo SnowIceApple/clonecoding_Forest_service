@@ -28,9 +28,6 @@
         padding: 20px 0;
     }
 
-    .mn_floor2{
-    }
-
     .mn_floor2 > li{
         width: calc(25% - 20px);
         margin-left: 20px;
@@ -268,5 +265,55 @@
 
     .wildfire_liveInfo{
         width: 57%;
+    }
+}
+
+@media screen and (max-width: 1180px){
+    .fb_mega_list{
+        padding: 0;
+    }
+    
+    .fb_mega_list ul li a{
+        font-size: 14px;
+        padding: 12px 10px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    #main_nav{
+        display: none;
+    }
+
+    .ht_util{
+        margin-right: 0px;
+    }
+
+    .ht_util ul li:nth-child(n+3){
+        display: none;
+    }
+
+    .ht_sns{
+        display: none;
+    }
+
+    .header_bot::before{
+        display: none;
+    }
+
+    .header_bot_box{
+        border-bottom: none;
+    }
+
+    .fvsv_tit{
+        width: 210px;
+        align-content: flex-start;
+    }
+
+    .fvsv_slide_box{
+        width: calc(100% - 210px);
+    }
+
+    .all_menu{
+        display: block;
     }
 }
