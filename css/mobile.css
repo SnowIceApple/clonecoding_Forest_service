@@ -84,7 +84,15 @@
         width: 100%;
     }
 
+    #main_bot_ad .container{
+        padding: 0 30px;
+    }
+
     /* footer */
+
+    .footer_top .container{
+        padding: 0 30px;
+    }
 
     .fb_link_list > ul > li > a{
         background: none !important;
@@ -142,8 +150,12 @@
         padding-bottom: 20px;
     }
 
-    .mnss_img{
+    .mnss_1 .mnss_img{
         height: 300px;
+    }
+
+    .mnss_1 .mnss_img img{
+        object-fit: fill;
     }
 
     .mnss_img.type2{
@@ -194,6 +206,10 @@
 
     .type_mi_min:has(.petition){
         width: calc(30% - 10px);
+    }
+
+    .mib_tit{
+        font-size: 20px;
     }
 
     .main_information .main_grid_right.type1{
