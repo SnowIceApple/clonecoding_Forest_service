@@ -234,6 +234,14 @@ $(document).ready(function(){
       slidesToScroll: 1,
       prevArrow: $('.fvsv_prev'),
       nextArrow: $('.fvsv_next'),
+      responsive: [
+        {
+          breakpoint: 1340,
+          settings: {
+            slidesToShow: 3
+          },
+        }
+      ]
     });
 
     $('.mt_btn').each(function(){

@@ -1,0 +1,110 @@
+@media screen and (max-width: 1400px){
+    .container{
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+
+    /* header */
+
+    .hb_inner{
+        justify-content: flex-start;
+        padding-right: 0px;
+        gap: 0 3%;
+    }
+
+    .hb_right{
+        right: 10px;
+    }
+
+    /* nav */
+
+    #main_nav .mn_floor1 > li > a{
+        font-size: 22px;
+    }
+
+    /* megamenu*/
+
+    .mega_menu_list{
+        padding: 20px 0;
+    }
+
+    .mn_floor2{
+    }
+
+    .mn_floor2 > li{
+        width: calc(25% - 20px);
+        margin-left: 20px;
+    }
+
+    /* grid */
+
+    .main_grid_left{
+        width: 73%;
+    }
+
+    .main_notice_box.type1{
+        width: 70%;
+    }
+
+    .main_box.min1{
+        width: calc(29%);
+    }
+
+    .main_grid_right.type1{
+        width: calc(27% - 15px);
+    }
+
+    .main_box.type_mi_wide{
+        width: 74%;
+    }
+
+    .main_box.type_mi_min{
+        width: calc(26% - 15px);
+    }
+
+    .main_box.type_mi_min .main_info_box.left{
+        padding: 20px;
+    }
+
+    /* wildfire_info */
+
+    .wildfire_info{
+        width: 70%;
+    }
+
+    .wildfire_visual{
+        width: 27%;
+        padding: 0;
+        align-items: center;
+    }
+
+    /* main_bot_slide */
+
+    .main_bot_slide{
+        width: 100%;
+    }
+
+    /* footer */
+
+    .fb_link_list > ul > li > a{
+        background: none !important;
+        padding: 13px 20px 13px 20px;
+    }
+
+    .fb_link_list > ul > li > a span{
+        display: none;
+    }
+
+    .fb_mega_list ul li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    /* nav */
+    #main_nav .mn_floor1 > li > a{
+        font-size: 21px;
+        letter-spacing: -1px;
+        padding: 0 10px;
+    }
+}
