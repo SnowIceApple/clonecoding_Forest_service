@@ -79,9 +79,9 @@ $(document).ready(function(){
         zeroHeight = 0;
 
 
-      if($(window).outerWidth() <= 737){
-        basicHeight = 100;
-      }
+      // if($(window).outerWidth() <= 737){
+      //   basicHeight = 100;
+      // }
 
         var tg = $(this);
         headerBot.stop().animate({
@@ -109,7 +109,6 @@ $(document).ready(function(){
     $('.main_nav_close_btn').on('click', function(){
       $('.mn_floor1 li').removeClass('active');
       header.removeClass('nav_active');
-        basicHeight = 100;
 
         var tg = $(this);
         headerBot.stop().animate({
