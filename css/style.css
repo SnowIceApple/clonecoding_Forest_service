@@ -630,7 +630,6 @@ section{
 /* all_menu */
 
 .all_menu{
-    position: relative;
     visibility: hidden;
     position: fixed;
     left: 0;
@@ -642,6 +641,7 @@ section{
 }
 
 .all_menu_container{
+    position: relative;
     width: 100%;
     height: 100%;
 }
@@ -654,6 +654,7 @@ section{
     align-items: center;
     box-sizing: border-box;
     padding: 0 15px;
+    background: #fff;
 }
 
 .am_logo a{
@@ -662,6 +663,142 @@ section{
 
 .am_logo a img{
     width: 95px;
+}
+
+.all_menu_util{
+    padding: 18px 0;
+    display: flex;
+    justify-content: center;
+    background: #656670;
+}
+
+.all_menu_util ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 17px;
+}
+
+.all_menu_util ul li a{
+    display: block;
+    font-size: 14px;
+    letter-spacing: -1px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.all_menu_list_box{
+    width: 100%;
+    height: calc(100% - 120px);
+    background: #ebebf0;
+}
+
+.all_menu_list{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 10;
+}
+
+.aml_floor1{
+    width: 120px;
+    height: 100%;
+    background: var(--color2-);
+}
+
+.amlf_btn{
+    width: 100%;
+    padding: 17px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17.5px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #fff;
+}
+
+.aml_floor1 > li{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: calc(100%);
+    box-sizing: border-box;
+    padding-left: 120px;
+    z-index: -1;
+    background: linear-gradient(to right, var(--color2-) 0px 120px, #ecebf0 120px 100%);
+}
+
+.aml_floor2{
+    width: 100%;
+    padding-bottom: 15px;
+    background: #f2f5f8;
+}
+
+.aml_floor2 > li{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.amlf2_btn{
+    width: 100%;
+}
+
+.amlf2_btn button{
+    display: block;
+    width: 100%;
+    padding: 17px 50px 17px 20px;
+    background: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: -1px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.aml_floor3{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 0;
+    background: #ebebf0;
+}
+
+.aml_floor3 > li{
+    width: 100%;
+}
+
+.aml_floor3 > li > a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: #333;
+    letter-spacing: -1px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.aml_floor3 .outer_link > a::after{
+    width: max-content;
+    content: url('../img/icon_blank.png');
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.aml_floor3 .outer_link:not(.mnf2_tit) > a:hover::after{
+    filter: brightness(1) invert(0);
+    -webkit-filter: brightness(1) invert(0);
+}
+
+.aml_outer_link{
+    width: 100%;
+}
+
+.aml_sns_link{
+    width: 100%;
 }
 
 /* content start */
