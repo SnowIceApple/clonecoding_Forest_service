@@ -752,6 +752,7 @@ section{
     letter-spacing: -1px;
     color: #fff;
     z-index: 2;
+    transition: all .15s ease;
 }
 
 .aml_floor1 > li.active .amlf_btn{
