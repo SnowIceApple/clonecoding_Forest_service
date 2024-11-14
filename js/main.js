@@ -159,7 +159,7 @@ $(document).ready(function(){
         }
         if($(window).width() <= 1100){
           e.preventDefault();
-          $(this).addClass('active');
+          $(this).parent().addClass('active');
           $('.all_menu').addClass('active');
           $('.all_menu').focus();
           $('html, body').addClass('fixed');
