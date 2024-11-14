@@ -77,6 +77,7 @@ section{
     left: 0;
     top: 0;
     width: 100%;
+    min-width: 375px;
     overflow: hidden;
 }
 
@@ -940,6 +941,7 @@ section{
     font-weight: 600;
     color: #000;
     letter-spacing: -1px;
+    text-align: center;
 }
 
 .aml_sns_link{
