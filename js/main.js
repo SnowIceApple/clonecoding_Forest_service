@@ -184,7 +184,7 @@ $(document).ready(function(){
     });
 
     $(window).on('resize', function(){
-      if($(window).width() >= 1100){
+      if($(window).width() > 1100){
         $('html, body').removeClass('fixed');
         $('.all_menu').removeClass('active');
         $('.all_menu_open').removeClass('active');
