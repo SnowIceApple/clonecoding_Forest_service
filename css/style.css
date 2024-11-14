@@ -1438,11 +1438,11 @@ section{
 }
 
 .mnc_img img{
-    position: relative;
-    transform-origin: center;
     display: block;
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: all .3s ease;
 }
 

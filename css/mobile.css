@@ -576,6 +576,48 @@
         width: 100%;
     }
 
+    .main_box.main_notice_box:has(.mnc_img){
+        height: auto;
+    }
+
+    .main_box.main_notice_box:has(.mnc_img) .main_notice_cont{
+        padding-bottom: 20px;
+    }
+
+    .mnss_1 .mnc_img{
+        position: relative;
+        height: 0;
+        padding-top: max(38.25%, 200px);
+    }
+
+    .main_notice_side_slide.mnss_1 .slick-slide a{
+        display: block;
+        padding-top: max(51.25%, 200px);
+    }
+
+    .mnss_1 .mnss_img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mnss_1 .mnss_1 .mnss_img{
+        height: 100%;
+    }
+
+    .mnss_1 .mnss_img img{
+    }
+
+    .mnc_img img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .minister{
         background: #0e824b url('../img/open_bg.png') center no-repeat;
         background-size: contain;
