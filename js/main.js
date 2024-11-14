@@ -261,20 +261,34 @@ $(document).ready(function(){
       draggable : false,
       speed: 300,
       slidesToShow: 4,
-      slidesToScroll: 1,
       prevArrow: $('.fvsv_prev'),
       nextArrow: $('.fvsv_next'),
       responsive: [
         {
           breakpoint: 1340,
           settings: {
-            slidesToShow: 3
+            slidesToShow: 3,
           },
+        },
+        {
           breakpoint: 1280,
           settings: {
-            slidesToShow: 2
+            slidesToShow: 2,
           },
-        }
+
+        }, 
+        {
+          breakpoint: 950,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
       ]
     });
 

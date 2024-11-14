@@ -689,7 +689,7 @@ section{
 .all_menu_util ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 0 17px;
+    gap: 0 20px;
 }
 
 .all_menu_util ul li a{
@@ -764,23 +764,23 @@ section{
 }
 
 .aml_floor1 > li:nth-child(2) .amlf_btn{
-    top: 50px;
+    top: 51px;
 }
 
 .aml_floor1 > li:nth-child(3) .amlf_btn{
-    top: calc(50px * 2);
+    top: calc(51px * 2);
 }
 
 .aml_floor1 > li:nth-child(4) .amlf_btn{
-    top: calc(50px * 3);
+    top: calc(51px * 3);
 }
 
 .aml_floor1 > li:nth-child(5) .amlf_btn{
-    top: calc(50px * 4);
+    top: calc(51px * 4);
 }
 
 .aml_floor1 > li:nth-child(6) .amlf_btn{
-    top: calc(50px * 5);
+    top: calc(51px * 5);
 }
 
 .aml_floor2{
@@ -792,6 +792,7 @@ section{
 .aml_floor2 > li{
     width: 100%;
     border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
 .amlf2_btn{
@@ -857,7 +858,7 @@ section{
     content: "";
     position: absolute;
     left: 0;
-    top: 9px;
+    top: 7px;
     width: 4px;
     height: 4px;
     background: #b1b1cc;
@@ -871,13 +872,16 @@ section{
     letter-spacing: -1px;
     box-sizing: border-box;
     padding-left: 10px;
+    line-height: 1.1;
 }
 
 .aml_floor3 .outer_link > a::after{
     width: max-content;
     content: url('../img/icon_blank.png');
     display: inline-block;
+    height: 16px;
     margin-top: 0px;
+    margin-bottom: -2px;
 }
 
 .aml_floor3 .outer_link:not(.mnf2_tit) > a:hover::after{
