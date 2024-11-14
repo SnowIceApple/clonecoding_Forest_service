@@ -1,5 +1,6 @@
 @media screen and (max-width: 1400px){
     .container{
+        min-width: 375px;
         box-sizing: border-box;
         padding: 0 10px;
     }
@@ -277,6 +278,10 @@
 }
 
 @media screen and (max-width: 1180px){
+
+    .logo a img{
+        height: 40px; 
+    }
 
     .main_bot_slide .slick-list{
         width: 1160px;
@@ -596,5 +601,189 @@
     .main_information .main_grid_right.type1 .main_box.type_right1{
         width: 100%;
     }
+    
+    #main_bot_ad .container{
+        padding: 0 10px;
+    }
 
+    .national_symbol{
+        width: 100%;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 730px){
+
+    .alert_step span{
+        font-size: 16px;
+    }
+
+    .alert_number span{
+        font-size: 16px;
+    }
+
+    .alert_number strong{
+        font-size: 20px;
+    }
+
+    .wildfire_visual{
+        position: static;
+        width: 100%;
+    }
+
+    .wildfire_liveInfo{
+        width: 100%;
+    }
+
+    .wfli_step{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 676px){
+    .favorite_service{
+        height: auto;
+    }
+
+    .fvsv_tit{
+        width: 100%;
+        height: 200px;
+    }
+
+    .fvsv_tit p br{
+        display: none;
+    }
+
+    .fvsv_slide_box{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .middle_area .main_grid_left{
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 630px){
+
+    .header_top .container{
+        padding: 0;
+    }
+
+    .ht_inner{
+        height: auto;
+    }
+
+    .ht_left{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .ht_right{
+        width: 100%;
+        padding: 13px 0;
+    }
+
+    .ht_util ul li:nth-child(3){
+        display: block;
+    }
+
+    .all_menu_open a{
+        width: 38px;
+        height: 38px;
+        background-size: contain;
+    }
+
+    .mt_btn{
+        font-size: 18px;
+        padding: 0 10px;
+    }
+
+    .mt_btn.link{
+        padding: 0 25px 0 10px;
+    }
+
+    .mtb_floor2 li a strong{
+        font-size: 15px;
+    }
+
+    .main_notice_tab{
+        padding: 20px;
+    }
+
+    .footer_top .container{
+        padding: 0 10px;
+    }
+
+    .ft_list ul{
+        gap: 1px 0;
+        justify-content: space-between;
+        box-sizing: border-box;
+        border: 1px solid #a0a0a0;
+        background: #a0a0a0;
+    }
+
+    .ft_list ul li{
+        padding: 0;
+        width: calc(50% - 0.5px);
+    }
+
+    .ft_list ul li:nth-child(n+7){
+        width: calc(33.3333% - 0.6666666666666667px);
+    }
+
+    .ft_list ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        height: 42px;
+        font-size: 14px;
+        background: #fff;
+        color: #000;
+    }
+
+    .ft_list ul li.bold a{
+        color: #000;
+    }
+
+    .ft_list ul li.bold a:hover{
+        color: #000;
+    }
+
+    .ft_list ul li::after{
+        display: none;
+    }
+
+    .ft_address ul li address{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .hb_right{
+        top: 26px;
+    }
+
+    .mob_main_search{
+        display: block;
+    }
+
+    .main_search{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    html, body{
+        overflow: visible;
+    }
 }

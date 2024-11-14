@@ -289,6 +289,18 @@ $(document).ready(function(){
             slidesToShow: 2,
           },
         },
+        {
+          breakpoint: 676,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 550,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
       ]
     });
 

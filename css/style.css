@@ -620,6 +620,18 @@ section{
     background: url('../img/srch_ico.png') center no-repeat;
 }
 
+.mob_main_search{
+    display: none;
+}
+
+.mob_main_search_open button{
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url('../img/util_search_button.png') center no-repeat;
+    background-size: contain;
+}
+
 .all_menu_open{
     margin-left: 10px;
 }
@@ -1136,6 +1148,7 @@ section{
     justify-content: center;
     font-weight: 400;
     transition: all .1s ease;
+    font-family: 'Noto Sans KR', serif;
 }
 
 .mt_btn.link::after{
@@ -1224,6 +1237,7 @@ section{
     transition: all .2s ease;
     border-bottom: 1px solid transparent;
     line-height: 1.2;
+    font-weight: 500;
 }
 
 .mtb_floor2 li a:hover strong{
@@ -1309,6 +1323,7 @@ section{
     letter-spacing: -1px;
     border-bottom: 1px solid #001f79;
     transition: all .2s ease;
+    font-weight: 500;
 }
 
 .mtc2_tit a:hover strong{
@@ -1331,6 +1346,7 @@ section{
     overflow: hidden;
     margin: 13px 0;
     letter-spacing: -0.8px;
+    font-weight: 500;
 }
 
 .dwp{
