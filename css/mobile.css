@@ -319,9 +319,10 @@
         width: calc(100% - 210px);
     }
 
-    /* .all_menu{
+    .all_menu.active{
         visibility: visible;
-    } */
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 1000px){

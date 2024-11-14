@@ -8,6 +8,10 @@ body{
     background: #ecebf0;
 }
 
+.fixed{
+    overflow: hidden;
+}
+
 #wrap{
     width: 100%;
     height: 100%;
@@ -631,13 +635,23 @@ section{
 
 .all_menu{
     visibility: hidden;
+    opacity: 0;
     position: fixed;
     left: 0;
     top: 0;
+    transform: translateX(-100%);
     width: 100%;
     height: 100%;
     background: #fff;
     z-index: 1000;
+    transition: opacity 0s 0.2s, visibility 0s 0.2s, transform 0.2s 0s;
+}
+
+.all_menu.active{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0s 0s, visibility 0s 0s, transform 0.2s 0s;
 }
 
 .all_menu_container{
@@ -706,18 +720,6 @@ section{
     background: var(--color2-);
 }
 
-.amlf_btn{
-    width: 100%;
-    padding: 17px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17.5px;
-    font-weight: 500;
-    letter-spacing: -1px;
-    color: #fff;
-}
-
 .aml_floor1 > li{
     position: absolute;
     left: 0px;
@@ -725,8 +727,60 @@ section{
     width: calc(100%);
     box-sizing: border-box;
     padding-left: 120px;
-    z-index: -1;
     background: linear-gradient(to right, var(--color2-) 0px 120px, #ecebf0 120px 100%);
+}
+
+.aml_inner{
+    width: 100%;
+    display: none;
+}
+
+.aml_floor1 > li.active .aml_inner{
+    display: block;
+}
+
+.amlf_btn{
+    position: absolute;
+    left: 0;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #fff;
+    z-index: 2;
+}
+
+.aml_floor1 > li.active .amlf_btn{
+    background: #fff;
+    color: #000;
+}
+
+.aml_floor1 > li:nth-child(1) .amlf_btn{
+    top: 0;
+}
+
+.aml_floor1 > li:nth-child(2) .amlf_btn{
+    top: 50px;
+}
+
+.aml_floor1 > li:nth-child(3) .amlf_btn{
+    top: calc(50px * 2);
+}
+
+.aml_floor1 > li:nth-child(4) .amlf_btn{
+    top: calc(50px * 3);
+}
+
+.aml_floor1 > li:nth-child(5) .amlf_btn{
+    top: calc(50px * 4);
+}
+
+.aml_floor1 > li:nth-child(6) .amlf_btn{
+    top: calc(50px * 5);
 }
 
 .aml_floor2{
@@ -744,10 +798,14 @@ section{
     width: 100%;
 }
 
+.amlf2_btn a,
 .amlf2_btn button{
-    display: block;
+    position: relative;
     width: 100%;
-    padding: 17px 50px 17px 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 0px 20px;
     background: #fff;
     font-size: 17px;
     font-weight: 500;
@@ -757,18 +815,52 @@ section{
     box-sizing: border-box;
 }
 
+.amlf2_btn button::after{
+    display: block;
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 10px;
+    background: url('../img/mo_menu_arr.png') center no-repeat;
+    background-size: contain;
+    transition: all .2s ease;
+}
+
+.aml_floor2 > li.active .amlf2_btn button::after{
+    transform: translateY(-50%) rotate(180deg);
+}
+
 .aml_floor3{
+    display: none;
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
-    display: flex;
     flex-wrap: wrap;
     gap: 14px 0;
     background: #ebebf0;
 }
 
+.aml_floor2 > li.active .aml_floor3{
+    display: flex;
+}
+
 .aml_floor3 > li{
+    position: relative;
     width: 100%;
+}
+
+.aml_floor3 > li::before{
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 4px;
+    height: 4px;
+    background: #b1b1cc;
 }
 
 .aml_floor3 > li > a{
@@ -795,10 +887,63 @@ section{
 
 .aml_outer_link{
     width: 100%;
+    background: #d7d7d7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1px 0;
+}
+
+.aml_outer_link li{
+    width: calc(50% - 0.5px);
+}
+
+.aml_outer_link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    gap: 6px 0;
+}
+
+.aml_ol_img{
+    margin: 0 auto;
+}
+
+.aml_ol_img img{
+    width: auto;
+    height: 30px;
+}
+
+.aml_outer_link a span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: -1px;
 }
 
 .aml_sns_link{
+    padding: 20px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0 12px;
+}
+
+.all_menu_close{
+    position: absolute;
+    right: 20px;
+    top: 23px;
+}
+
+.all_menu_close button{
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url('../img/icon_mMenu_close.png') center no-repeat;
 }
 
 /* content start */
