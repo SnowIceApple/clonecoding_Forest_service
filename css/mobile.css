@@ -487,7 +487,8 @@
     }
 
     .fb_link_list > ul > li > a span{
-        display: none;
+        text-indent: -9999px;
+        font-size: 1px;
     }
 
     .fb_link_list > ul > li:not(:nth-child(2)) > a{
