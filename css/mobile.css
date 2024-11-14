@@ -547,6 +547,14 @@
 
 @media screen and (max-width: 768px){
 
+    .wildfire_banner ul li a img:first-child{
+        display: none;
+    }
+    
+    .wildfire_banner ul li a img:last-child{
+        display: block;
+    }
+
     .main_notice .main_grid_left{
         height: auto;
         gap: 25px 0;
