@@ -513,6 +513,7 @@
     .fb_mega_list{
         height: 200px;
         overflow: auto;
+        overscroll-behavior: contain;
     }
 
     .fb_mega_list ul li{
