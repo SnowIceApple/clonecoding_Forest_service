@@ -188,6 +188,48 @@ $(document).ready(function(){
         $('html, body').removeClass('fixed');
         $('.all_menu').removeClass('active');
         $('.all_menu_open').removeClass('active');
+        $('.mob_main_search').removeClass('active');
+        $('.mob_main_search_open').removeClass('active');
+      }
+    });
+
+    $('.mob_main_search_open button').on('click', function(e){
+      e.stopPropagation();
+      $('.mob_main_search').toggleClass('active');
+      if($('.mob_main_search').hasClass('active')){
+        $('html, body').addClass('fixed');
+        setTimeout(() => {
+          $('.mob_main_search_area').slideDown(200);
+        }, 150);
+      }
+      else{
+        $('html, body').removeClass('fixed');
+        $('.mob_main_search_area').slideUp(200);
+      }
+      if($('.mob_main_search').hasClass('active')){
+        $(this).children('.hidden_text').text('검색창 닫기');
+      }
+      else{
+        $(this).children('.hidden_text').text('검색창 열기');
+      }
+    });
+
+
+    $(document).on('click', function(e){
+      if(!$(e.target).closest('.mob_main_search_area').length){
+        $('.mob_main_search_area').slideUp(200);
+        $('.mob_main_search').removeClass('active');
+        $('html, body').removeClass('fixed');
+        $('.mob_main_search_open button').children('.hidden_text').text('검색창 열기');
+      }
+    });
+
+    $('.mob_main_search_inputBox button').on('keydown', function(e){
+      var code = e.keyCode || e.which;
+      if (code == 9) {  
+        setTimeout(() => {
+          $('.mob_main_search_open button').focus();
+        }, 200);
       }
     });
 

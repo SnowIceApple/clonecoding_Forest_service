@@ -629,9 +629,9 @@
                             <span>메뉴닫기</span>
                         </button>
                     </div>
-                    <div class="hb_right" tabindex="0">
+                    <div class="hb_right">
                         <div class="main_search">
-                            <form action="get">
+                            <form method="get">
                                 <fieldset>
                                     <legend>검색창</legend>
                                     <label for="main_search_input">
@@ -649,6 +649,26 @@
                                 <button>
                                     <span class="hidden_text">검색창 열기</span>
                                 </button>
+                            </div>
+                            <div class="mob_main_search_modal">
+                                <div class="mob_main_search_box">
+                                    <div class="mob_main_search_area" tabindex="0">
+                                        <div class="mob_main_search_inputBox">
+                                            <form method="get">
+                                                <fieldset>
+                                                    <legend>모바일 검색창</legend>
+                                                    <label for="mob_search_input">
+                                                        <span class="hidden_text">검색어를 입력하세요</span>
+                                                    </label>
+                                                    <input type="search" name="mob_search_input" id="mob_search_input" placeholder="검색어를 입력하세요.">
+                                                    <button>
+                                                        <span class="hidden_text">검색하기</span>
+                                                    </button>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="all_menu_open">
