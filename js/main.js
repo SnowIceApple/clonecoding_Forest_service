@@ -12,7 +12,7 @@ $(document).ready(function(){
         header.removeClass('nav_active');
     });
 
-    $('.hb_right').on('focusin', function(){
+    $('.hb_left').on('focusin', function(){
       header.removeClass('nav_active');
       $('#main_nav .mn_floor1 li').removeClass('active');
     });
@@ -132,7 +132,7 @@ $(document).ready(function(){
     });
 
 
-    $('.hb_left, .hb_right').on('focusin', function(){
+    $('.hb_left').on('focusin', function(){
         headerBot.stop().animate({
             height: basicHeight,
         }, 400); 
