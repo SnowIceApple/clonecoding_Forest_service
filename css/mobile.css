@@ -819,6 +819,14 @@
 }
 
 @media screen and (max-width: 480px){
+    
+    .header_bot{
+        overflow: visible;
+    }
+
+    .header_bot_box{
+        overflow: visible;
+    }
 
     .hb_right{
         top: 26px;
