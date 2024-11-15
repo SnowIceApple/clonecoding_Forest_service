@@ -234,7 +234,7 @@ $(document).ready(function(){
         $('.all_menu_open').removeClass('active');
 
       }
-      if($(window).width() <= 481 && $('.mob_main_search').hasClass('active')){
+      if($(window).width() >= 481 && $('.mob_main_search').hasClass('active')){
         $('.mob_main_search').removeClass('active');
         $('.mob_main_search_open').removeClass('active');
         $('html, body').removeClass('fixed');
