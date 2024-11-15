@@ -819,6 +819,18 @@
 }
 
 @media screen and (max-width: 480px){
+
+    #header{
+        overflow: visible;
+    }
+
+    .header{
+        overflow: visible;
+    }
+
+    .header::after{
+        display: none;
+    }
     
     .header_bot{
         overflow: visible;
