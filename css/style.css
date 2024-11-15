@@ -637,14 +637,15 @@ section{
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.7);
     visibility: hidden;
     opacity: 0;
     transition: all .2s ease;
     box-sizing: border-box;
     padding-top: 72px;
+    z-index: 100;
 }
 
 .mob_main_search.active .mob_main_search_modal{
